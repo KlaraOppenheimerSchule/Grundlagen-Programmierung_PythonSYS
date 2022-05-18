@@ -1,13 +1,13 @@
 #1
-#import pathlib
-#print("Das ist das aktuelle Verzeichnis: ", pathlib.Path().absolute())
+import os
+print("Das ist das aktuelle Verzeichnis: ", os.listdir())
 
 #2
 import math
 print(math.pi)
 
 #3
-from datetime import date
+from datetime import *
 today=date.today()
 print(today)
 
@@ -20,4 +20,8 @@ import statistics
 zahlen=1,4,8,12
 durchschnitt=statistics.mean(zahlen)
 print(durchschnitt)
+
+wert=round(2.33)
+print(wert)
+
 
