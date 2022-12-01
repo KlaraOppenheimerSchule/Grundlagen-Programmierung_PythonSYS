@@ -5,5 +5,9 @@ nachname = input("Nachname")
 print(vorname , nachname)
 
 #Aufgabe2
-rechnung = int(input("1 Zahl")) * int(input("2 Zahl")) * int(input("3 Zahl"))
+zahl1=int(input("1 Zahl"))
+zahl2=int(input("2 Zahl"))
+zahl3=int(input("3 Zahl"))
+
+rechnung = zahl1*zahl2*zahl3
 print(rechnung)
