@@ -1,0 +1,25 @@
+# AUFGABE 2
+# Aufgabe a)
+# Erstellen Sie eine Datenstruktur für ihre drei besten Klassenfreunde.
+
+freunde = ["Jonas","Andreas","Niclas"]
+print(freunde)
+
+
+#Aufgabe b)
+
+#Aufgabe c)
+
+#Aufgabe d)
+# Ergänze die Liste um einen weiteren Freund.
+freund = input("Ergänze deine Freundesliste: ")
+freunde.append(freund)
+
+
+# Aufgabe f)
+gesuchterFreund=input("Gesuchter Freund:")
+# Überprüfen Sie vor dem Hinzufügen eines Freundes, ob dieser vorhanden ist.
+if gesuchterFreund in freunde:
+    print("Dieser Freund ist einer deiner Bestesten Freunde.")
+else:
+    freund = input("Ergänze deine Freundesliste: ")
