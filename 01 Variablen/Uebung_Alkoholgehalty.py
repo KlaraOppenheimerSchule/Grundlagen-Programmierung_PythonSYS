@@ -1,0 +1,8 @@
+V=float(input("Was ist das Volumen des Getränkes?"))
+p=float(0.8)
+m=int(input("Wie schwer ist die Person?"))
+r=float(input("Was ist der Verteilungsfaktor?"))
+e=float(input("Was ist der Alkoholgehalt?"))
+A=float(V*e*p)
+c=(A/(m*r))
+print(c)
