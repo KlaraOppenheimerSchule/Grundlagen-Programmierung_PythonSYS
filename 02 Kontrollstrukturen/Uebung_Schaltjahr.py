@@ -1,6 +1,5 @@
-       
-# TODO: Noch gegen Aufgabenstellung hin prüfen
 year=int(input("Jahr eingeben"))
+
 if(year % 4 == 0):
     if(year % 100 != 0):
         print("Schaltjahr")
