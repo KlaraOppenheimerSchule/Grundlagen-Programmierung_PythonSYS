@@ -13,4 +13,4 @@ if(tankVolume >= 100):
     price=price*0.95
 
 costs=price*tankVolume
-print("Der Tankvorgang kostet:" + str(costs))
+print("Der Tankvorgang kostet: " + str(costs))
