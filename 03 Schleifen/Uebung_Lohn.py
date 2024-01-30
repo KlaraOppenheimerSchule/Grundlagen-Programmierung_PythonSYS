@@ -1,7 +1,5 @@
 tage = 0
- 
 lohn = 1
- 
 gesamtlohn = 0 
  
 while gesamtlohn < 40000:
