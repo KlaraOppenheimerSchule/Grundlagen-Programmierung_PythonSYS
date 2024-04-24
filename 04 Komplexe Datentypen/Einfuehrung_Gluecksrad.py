@@ -1,3 +1,12 @@
-glueckszahlen = [22,17,23,0,9,16,15]
-for glueckszahl in glueckszahlen:
-    print(glueckszahl)
+zahlen = [11, 4, 17, 9, 6, 20]
+gerateneZahlen = [4, 4, 6, 2, 12, 22]
+gleicheZahlen = []
+ 
+for x in gerateneZahlen:
+    if x in zahlen:
+        gleicheZahlen.append(x)
+ 
+size =len(gleicheZahlen)
+ 
+print("Diese Zahlen sind gleich: " , gleicheZahlen)
+print("So viele Zahlen sind gleich: " , size)
