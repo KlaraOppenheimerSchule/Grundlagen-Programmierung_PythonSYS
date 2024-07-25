@@ -24,11 +24,13 @@ print(durchschnitt)
 wert=round(2.33)
 print(wert)
 
-#6 -? Noch zu klären
+#6 
 import os
 liste=os.listdir()
 for i in liste:
     if os.path.isdir(i):
         print("Ordner: ", i)
 
+
+#7 - etwas zu umfangreich
 
