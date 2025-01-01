@@ -13,3 +13,7 @@ print(type(ergebnis))
 durchschnitt=(zahl1+zahl2)/2
 print(durchschnitt)
 print(type(durchschnitt))
+
+
+
+

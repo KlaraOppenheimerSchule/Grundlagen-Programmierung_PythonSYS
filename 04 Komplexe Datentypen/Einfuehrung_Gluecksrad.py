@@ -1,10 +1,25 @@
-zahlen = [11, 4, 17, 9, 6, 20]
-gerateneZahlen = [4, 4, 6, 2, 12, 22]
+from random import randint
+
+zufallszahlen = []
+nutzerZahlen = []
+
+for x in range(0,6):
+    zufallszahl = randint(1,42)
+    zufallszahlen.append(zufallszahl)
+
+print(zufallszahlen)
+
+for n in range(0,6):
+    nutzerZahl = int(input("Zahl eingeben: "))
+    nutzerZahlen.append(nutzerZahl)
+
 gleicheZahlen = []
  
-for x in gerateneZahlen:
-    if x in zahlen:
-        gleicheZahlen.append(x)
+for x in nutzerZahlen:
+    if x in zufallszahlen:
+        #doesnt work - to check
+        #if(x not in zufallszahlen):
+            gleicheZahlen.append(x)
  
 size =len(gleicheZahlen)
  
