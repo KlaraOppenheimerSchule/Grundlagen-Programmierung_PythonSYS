@@ -9,7 +9,6 @@ for x in range(0,6):
 
 print(zufallszahlen)
 
-
 #Sechs Zahlen vom Nutzer eingeben lassen
 nutzerZahlen = []
 
