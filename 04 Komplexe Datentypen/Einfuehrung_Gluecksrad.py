@@ -1,10 +1,29 @@
-zahlen = [11, 4, 17, 9, 6, 20]
-gerateneZahlen = [4, 4, 6, 2, 12, 22]
+from random import randint
+
+#Sechs Zufallszahlen vom Computer erzeugen lassen
+zufallszahlen = []
+
+for x in range(0,6):
+    zufallszahl = randint(1,42)
+    zufallszahlen.append(zufallszahl)
+
+print(zufallszahlen)
+
+#Sechs Zahlen vom Nutzer eingeben lassen
+nutzerZahlen = []
+
+for n in range(0,6):
+    nutzerZahl = int(input("Zahl eingeben: "))
+    nutzerZahlen.append(nutzerZahl)
+
+
+#Ermitteln, wie viele Zahlen richtig erraten wurden
 gleicheZahlen = []
  
-for x in gerateneZahlen:
-    if x in zahlen:
-        gleicheZahlen.append(x)
+for x in nutzerZahlen:
+    if x in zufallszahlen:
+        if(x not in gleicheZahlen):
+            gleicheZahlen.append(x)
  
 size =len(gleicheZahlen)
  
