@@ -1,15 +1,10 @@
-vorname="Klaus"
+meineBrotdose="Pizzasandwich"
+print(meineBrotdose)
+print("----------------")
+meineBrotdose="Nix mehr da"
+print(meineBrotdose)
+print(type(meineBrotdose))
+
+vorname=input("Bitte Namen eingeben")
 print(vorname)
-print(type(vorname))
 
-
-zahl1=5
-zahl2=6
-ergebnis=zahl1+zahl2
-print(ergebnis)
-
-print(type(ergebnis))
-
-durchschnitt=(zahl1+zahl2)/2
-print(durchschnitt)
-print(type(durchschnitt))

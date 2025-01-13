@@ -1,0 +1,15 @@
+grades = []
+checkGrades=["1","2","3","4","5","6"]
+
+is_running = True
+while is_running:
+    user_input = input("Note eingeben (x=Ende): ")
+    print(type(user_input))
+    
+    if user_input in checkGrades:    
+        grades.append(user_input)
+        
+    if user_input == "x":
+        is_running = False
+
+print(grades)
