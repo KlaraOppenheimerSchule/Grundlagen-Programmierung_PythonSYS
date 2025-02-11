@@ -29,6 +29,13 @@ class Mitarbeiter:
     def auto_ausleihen(self, auto):
         self.__ausgeliehenes_auto = auto
         print(f"{self.__name} hat das Auto mit Kennzeichen {auto.getKennzeichen()} ausgeliehen.")
+
+    def auto_zurueckgeben(self):
+        if(self.__ausgeliehenes_auto==None):
+            print("Sie haben gar kein Auto ausgeliehen")
+        else:
+            self.__ausgeliehenes_auto=None
+            print("Wir haben das Auto zurückgegeben")
        
 auto1 = Auto("Lamborghini", "WÜ U 36", "928491", "5162")
 auto2 = Auto("Mercedes-Benz", "WÜ U 37", "6925191", "45478")
@@ -36,4 +43,6 @@ mitarbeiter1 = Mitarbeiter("123456", "Leon Mustermann")
 mitarbeiter2 = Mitarbeiter("987654", "Max Mustermann")
  
 #Beim Mitarbeiter 2 wird die Methode auto_ausleihen aufgerufen und als Parameter die Referenz auf das Auto1 mitgegeben
+mitarbeiter2.auto_zurueckgeben()
 mitarbeiter2.auto_ausleihen(auto1)
+mitarbeiter2.auto_zurueckgeben()
