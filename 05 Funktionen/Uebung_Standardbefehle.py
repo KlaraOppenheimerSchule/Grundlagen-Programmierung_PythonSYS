@@ -32,5 +32,3 @@ for i in liste:
         print("Ordner: ", i)
 
 
-#7 - etwas zu umfangreich
-
