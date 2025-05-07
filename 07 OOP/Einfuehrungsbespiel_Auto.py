@@ -3,7 +3,7 @@ class Auto:
     #Konstruktor
     def __init__(self, hersteller, modell, baujahr, leistung, verbrauch):
         self.__hersteller = hersteller
-        self.__modell = modell
+        self.modell = modell
         self.__baujahr = baujahr
         self.__leistung = leistung
         self.__verbrauch = verbrauch
@@ -30,7 +30,13 @@ class Auto:
 #------------
 
 #Erzeugung eines Objektes, basierend auf der Klasse Auto. Aufruf des Konstruktors
-meinAuto = Auto("Audi", "A4", 2015, 150, 4.5)
+meinAuto1 = Auto("Audi", "A4", 2015, 150, 4.5)
+meinAuto2 = Auto("Audi", "A3", 2015, 150, 4.5)
+meinAuto3 = Auto("Audi", "A5", 2015, 150, 4.5)
+meinAuto4 = Auto("Audi", "A2", 2015, 150, 4.5)
+meinAuto5 = Auto("Audi", "A1", 2015, 150, 4.5)
 
-meinAuto.tuerOeffnen()
-meinAuto.tuerSchliessen()
+meinAuto5.tuerOeffnen()
+meinAuto5.tuerSchliessen()
+
+print(meinAuto5.modell)

@@ -1,6 +1,4 @@
 # Aufgabe
-# Erstellen Sie ein Use-Case-Diagramm sowie anschließend ein Programm,
-# das folgende beschriebene Funktionalität realisiert:
 
 # Ein Nutzer erstellt grundsätzlich in einer CSV-Datei Vokabeln.
 # Die CSV-Datei beinhaltet in der linken Spalte das deutsche Wort
@@ -14,8 +12,6 @@
 # wird überprüft, ob diese von diesem korrekt übersetzt wurde. Sofern
 # diese falsch übersetzt wird, wird die richtige Übersetzung angezeigt.
 
-# Weiterhin hat der Nutzer die Möglichkeit, die Vokabelliste drucken zu lassen.
-
 import csv
 import random
 
@@ -23,10 +19,11 @@ def check_translation(Deutsch, Englisch):
     user_input = input(f"Bitte übersetze '{Deutsch}' ins Englische: ").lower()
     return user_input == Englisch.lower()
 
-Vokabelliste = "CSV-Liste.csv"
+file_name="05 Funktionen\Vokabeln.csv"
+
 vocabulary = []
 
-with open(Vokabelliste, "r", encoding="utf-8") as file:
+with open(file_name, "r", encoding="utf-8") as file:
     vocabulary = list(csv.reader(file, delimiter=","))
 
 random.shuffle(vocabulary)
@@ -38,7 +35,7 @@ for row in vocabulary:
     if Deutsch not in schon_gefragt:
         while True:
             if check_translation(Deutsch, Englisch):
-                print("Jo, korrekt!")
+                print("Ja, korrekt!")
                 break
             else:
                 print(f"Leider nicht richtig! Die korrekte Übersetzung lautet: {Englisch}")
