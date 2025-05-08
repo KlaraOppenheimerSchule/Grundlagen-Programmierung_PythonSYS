@@ -1,15 +1,40 @@
 grades = []
-checkGrades=["1","2","3","4","5","6"]
+more_grades_desired = True
 
-is_running = True
-while is_running:
-    user_input = input("Note eingeben (x=Ende): ")
-    print(type(user_input))
+# Collect grades from the user
+while more_grades_desired:
+    # Prompt user to enter a grade
+    grade = int(input("Enter a grade: "))
     
-    if user_input in checkGrades:    
-        grades.append(user_input)
-        
-    if user_input == "x":
-        is_running = False
+    # Check if the grade is between 1 and 6
+    if 0 < grade < 7:
+        grades.append(grade)
+    
+    # Ask if more grades are desired
+    wish = input("More grades desired (y/n)? ")
+    if wish.lower() == 'n':
+        more_grades_desired = False
 
-print(grades)
+# Print the list of grades
+print("Grades:", grades)
+
+# Find the highest grade without using max()
+highest_grade = grades[0]
+for grade in grades:
+    if grade > highest_grade:
+        highest_grade = grade
+print("Highest grade is", highest_grade)
+
+# Find the lowest grade without using min()
+lowest_grade = grades[0]
+for grade in grades:
+    if grade < lowest_grade:
+        lowest_grade = grade
+print("Lowest grade is", lowest_grade)
+
+# Calculate the average grade without using sum()
+total = 0
+for grade in grades:
+    total += grade
+average_grade = total / len(grades)
+print("Average grade is", average_grade)
