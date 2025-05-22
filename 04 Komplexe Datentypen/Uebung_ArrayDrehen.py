@@ -5,3 +5,4 @@ zahlen2 = list(reversed(zahlen))
 print(zahlen)
 
 print(zahlen2)
+zahlen.

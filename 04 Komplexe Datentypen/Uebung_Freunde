@@ -13,7 +13,7 @@ print(freunde)
 #Aufgabe d)
 # Ergänze die Liste um einen weiteren Freund.
 freund = input("Ergänze deine Freundesliste: ")
-freunde.append(freund)
+freunde.append("freund")
 
 
 # Aufgabe f)

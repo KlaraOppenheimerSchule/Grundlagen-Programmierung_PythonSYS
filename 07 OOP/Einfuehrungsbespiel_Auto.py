@@ -35,8 +35,11 @@ meinAuto2 = Auto("Audi", "A3", 2015, 150, 4.5)
 meinAuto3 = Auto("Audi", "A5", 2015, 150, 4.5)
 meinAuto4 = Auto("Audi", "A2", 2015, 150, 4.5)
 meinAuto5 = Auto("Audi", "A1", 2015, 150, 4.5)
+meinAuto6 = Auto("VW", "Golf", 2025, 150, 4.5)
 
 meinAuto5.tuerOeffnen()
 meinAuto5.tuerSchliessen()
+
+meinAuto6.tuerOeffnen()
 
 print(meinAuto5.modell)
