@@ -12,10 +12,14 @@ today=date.today()
 print(today)
 
 #4
+year=today.year
+print(year)
+
+#5
 from random import randint
 print(randint(0,100))
 
-#5
+#6
 import statistics
 zahlen=1,4,8,12
 durchschnitt=statistics.mean(zahlen)
@@ -24,7 +28,7 @@ print(durchschnitt)
 wert=round(2.33)
 print(wert)
 
-#6 
+#7 
 import os
 liste=os.listdir()
 for i in liste:
