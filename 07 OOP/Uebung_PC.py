@@ -1,13 +1,14 @@
 class PC:
     def __init__(self, hersteller, baujahr, modell, angeschaltet):
-        self.hersteller = hersteller
-        self.baujahr = baujahr
-        self.modell = modell
-        self.angeschaltet = angeschaltet
+        self.__hersteller = hersteller
+        self.__baujahr = baujahr
+        self.__modell = modell
+        self.__angeschaltet = angeschaltet
+
     def hochfahren(self):
-        if self.angeschaltet:
+        if self.__angeschaltet:
             print("PC ist ausgeschaltet")
-            self.angeschaltet = False
+            self.__angeschaltet = False
         else:
             print("PC ist angeschaltet")
 

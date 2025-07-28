@@ -1,1 +1,1 @@
-"hallo Simon".
+print("Hallo Welt".upper())

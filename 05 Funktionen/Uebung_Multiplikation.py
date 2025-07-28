@@ -9,3 +9,5 @@ zahl3 = int(input("Zahl 3: "))
 ergebnis1 = multiplikation(zahl1, zahl2, zahl3)
 print("Ergebnis 1:", ergebnis1)
 
+ergebnis2=multiplikation(3,4,5)
+print(ergebnis2)
